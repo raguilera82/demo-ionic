@@ -35,7 +35,8 @@ angular.module('starter', ['ionic', 'ngCordova','Controllers'])
     		url: '/contacts',
     		views: {
     			'tab-contacts': {
-    				templateUrl: 'templates/tab-contacts.html'
+    				templateUrl: 'templates/tab-contacts.html',
+            controller: 'ContactsController'
     			}
     		}
     })
