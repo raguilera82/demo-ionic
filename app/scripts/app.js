@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic'])
+angular.module('starter', ['ionic', 'ngCordova','Controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -12,6 +12,9 @@ angular.module('starter', ['ionic'])
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
+
+  console.log('entro en el router');
+
   $stateProvider.state('tab', {
       url: '/tab',
       abstract: true,
@@ -23,6 +26,7 @@ angular.module('starter', ['ionic'])
       views: {
         'tab-camera': {
           templateUrl: 'templates/tab-camera.html',
+          controller: 'CameraController'
         }
       }
     })

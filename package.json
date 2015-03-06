@@ -49,8 +49,24 @@
     "test": "grunt test"
   },
   "cordovaPlugins": [
-		"org.apache.cordova.device",
-		"org.apache.cordova.console",
-		"com.ionic.keyboard"
+    "org.apache.cordova.device",
+    "org.apache.cordova.console",
+    "com.ionic.keyboard",
+    "org.apache.cordova.camera",
+    "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git",
+    "org.apache.cordova.console",
+    "org.apache.cordova.device",
+    "org.apache.cordova.camera",
+    "com.ionic.keyboard",
+    "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git",
+    "org.apache.cordova.console",
+    "org.apache.cordova.console",
+    "org.apache.cordova.device",
+    "org.apache.cordova.camera",
+    "org.apache.cordova.camera",
+    "com.ionic.keyboard",
+    "com.ionic.keyboard",
+    "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git",
+    "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git"
   ]
 }

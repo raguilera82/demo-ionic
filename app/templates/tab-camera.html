@@ -1,3 +1,8 @@
-<ion-content>
-<p>Aqui va a ir la camara</p>
+<ion-view name="tab-camera" title="camera">
+<ion-content class="padding has-header">
+<button class="button button-block button-light" ng-click="takePicture()">
+Hacer Foto
+</button>
+<img ng-src="{{myImage}}" width="100%" />
 </ion-content>
+</ion-view>
