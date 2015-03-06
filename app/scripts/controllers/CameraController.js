@@ -1,4 +1,4 @@
-angular.module('Controllers', [])
+angular.module('Camera', [])
 .controller('CameraController', function($scope, $cordovaCamera, $cordovaToast){
 	
 	console.log('CameraController: fuera');

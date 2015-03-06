@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'ngCordova','Controllers'])
+angular.module('starter', ['ionic', 'ngCordova','Camera', 'Contacts', 'Rate'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -45,7 +45,8 @@ angular.module('starter', ['ionic', 'ngCordova','Controllers'])
       url: '/rate',
       views: {
         'tab-rate': {
-          templateUrl: 'templates/tab-rate.html'
+          templateUrl: 'templates/tab-rate.html',
+          controller: 'RateController'
         }
       }
     })
