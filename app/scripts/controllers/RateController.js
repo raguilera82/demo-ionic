@@ -5,17 +5,22 @@ angular.module('Rate', [])
 
 	$scope.doAcciones = function(){
 		var options = {
-		    title: 'What do you want with this image?',
-		    buttonLabels: ['Lucia es la mejor', 'Share via Twitter'],
-		    addCancelButtonWithLabel: 'Cancel',
-		    androidEnableCancelButton : true,
-		    winphoneEnableCancelButton : true,
-		    addDestructiveButtonWithLabel : 'Delete it'
+		    title: '¿Qué te parece la demo?',
+		    buttonLabels: ['La mejor del mundo', 'No está mal', 'Yo lo se hacer mejor']
 		  };
 
 		$cordovaActionSheet.show(options).then(function(btnIndex) {
         var index = btnIndex;
-        $cordovaToast.showShortCenter('Ha pulsado: ' + index);
+        if (index == 1){
+        	$cordovaToast.showShortCenter('Ya será menos :-)');	
+        }else if (index == 2){
+        	$cordovaToast.showShortCenter('Espero que te sirva :-|');
+        }else if (index == 3){
+        	$cordovaToast.showShortCenter('Estoy esperando que lo demuestres ;-)');
+        }else {
+        	$cordovaToast.showShortCenter('No se que has pulsado :-(');
+        }
+        
       });;
 
 	}

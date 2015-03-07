@@ -1,13 +1,15 @@
 <ion-view name="tab-contacts" title="contacts">
 	<ion-content has-subheader="true">
+	<ion-refresher
+    	pulling-text="Refrescando"
+    	on-refresh="findContacts()">
+  	</ion-refresher>
 		<ion-list>
 			<ion-item ng-repeat="contact in contacts">
 				<p>{{contact.name.formatted}}</p>
 				<p>{{contact.telephone}}</p>
 			</ion-item>
 		</ion-list>
-
-		<button ng-click="findContacts()">RECUPERAR CONTACTOS</button>
 
 	</ion-content>
 </ion-view>
