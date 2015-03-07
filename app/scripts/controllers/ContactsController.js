@@ -13,7 +13,7 @@ angular.module('Contacts', [])
 
 	function findContacts(){
 		var options = new ContactFindOptions();
-		options.filter = '';
+		options.filter = 'Ruben';
 		options.multiple = true;
 		options.desiredFields = [navigator.contacts.fieldType.name, navigator.contacts.fieldType.phoneNumbers];
 
