@@ -1,0 +1,12 @@
+<ion-view name="tab-contacts" title="contacts">
+	<ion-content has-subheader="true">
+	<button class="button button-block" ng-click="findContacts()">RECUPERAR CONTACTOS</button>
+		<ion-list>
+			<ion-item ng-repeat="contact in contacts">
+				<p>{{contact.name.formatted}}</p>
+				<p>{{contact.telephone}}</p>
+			</ion-item>
+		</ion-list>
+
+	</ion-content>
+</ion-view>
