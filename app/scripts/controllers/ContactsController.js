@@ -1,8 +1,6 @@
 angular.module('Contacts', [])
 .controller('ContactsController', function($scope, $cordovaContacts, $cordovaToast, $ionicPlatform){
 	
-	console.log('ContactsController');
-
 	$ionicPlatform.ready(function(){ 
 		findContacts();		
 	});

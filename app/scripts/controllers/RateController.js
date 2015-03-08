@@ -1,8 +1,6 @@
 angular.module('Rate', [])
 .controller('RateController', function($scope, $cordovaActionSheet, $cordovaToast){
 	
-	console.log('RateController: fuera');
-
 	$scope.doAcciones = function(){
 		var options = {
 		    title: '¿Qué te parece la demo?',
@@ -18,7 +16,7 @@ angular.module('Rate', [])
         }else if (index == 3){
         	$cordovaToast.showShortCenter('Estoy esperando que lo demuestres ;-)');
         }else {
-        	$cordovaToast.showShortCenter('No se que has pulsado :-(');
+        	$cordovaToast.showShortCenter('No sé que has pulsado :-(');
         }
         
       });;
