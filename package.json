@@ -50,14 +50,11 @@
   },
   "cordovaPlugins": [
     "com.ionic.keyboard",
-    "com.ionic.keyboard",
-    "nl.x-services.plugins.toast",
     "nl.x-services.plugins.toast",
     "org.apache.cordova.camera",
-    "org.apache.cordova.camera",
-    "org.apache.cordova.contacts",
     "org.apache.cordova.contacts",
     "org.apache.cordova.device",
-    "org.apache.cordova.device"
+    "nl.x-services.plugins.actionsheet",
+    "org.apache.cordova.console"
   ]
 }
