@@ -18,3 +18,5 @@ target
 app/scripts/config.js
 .externalToolBuilders
 .tern-project
+atlassian-ide-plugin.xml
+atlassian-ide-plugin.xml

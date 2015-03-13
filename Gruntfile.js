@@ -323,7 +323,7 @@ module.exports = function (grunt) {
     karma: {
       options: {
         basePath: '',
-        frameworks: ['mocha', 'chai'],
+        frameworks: ['mocha', 'chai','jasmine'],
         files: [
           '<%= yeoman.app %>/bower_components/angular/angular.js',
           '<%= yeoman.app %>/bower_components/angular-mocks/angular-mocks.js',
@@ -336,7 +336,7 @@ module.exports = function (grunt) {
           '<%= yeoman.test %>/mock/**/*.js',
           '<%= yeoman.test %>/spec/**/*.js'
         ],
-        autoWatch: false,
+        autoWatch: true,
         reporters: ['dots', 'coverage'],
         port: 8080,
         singleRun: false,
@@ -359,7 +359,7 @@ module.exports = function (grunt) {
       },
       continuous: {
         browsers: ['PhantomJS'],
-        singleRun: true,
+        singleRun: false,
       }
     },
 
