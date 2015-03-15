@@ -1,6 +1,10 @@
+/* global angular, Camera, CameraPopoverOptions */
+
+'use strict'; 
+
 angular.module('Camera', [])
 .controller('CameraController', function($scope, $cordovaCamera, $cordovaToast){
-	
+
 	$scope.takePicture = function(){
 		var options = {
 			destinationType: Camera.DestinationType.DATA_URL,
@@ -16,6 +20,6 @@ angular.module('Camera', [])
 			$cordovaToast.showShortCenter('Foto cancelada');
 		});
 
-	}
+	};
 
 });

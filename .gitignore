@@ -20,3 +20,5 @@ app/scripts/config.js
 .tern-project
 atlassian-ide-plugin.xml
 atlassian-ide-plugin.xml
+/nbproject/private/
+nbproject/

@@ -1,26 +1,21 @@
-angular.module('Contacts', [])
-.controller('ContactsController', function($scope, $cordovaContacts, $cordovaToast, $ionicPlatform){
+angular.module('Contacts', ['Contacts.services'])
+.controller('ContactsController', 
+	function($scope, $cordovaToast, $ionicPlatform, ContactsService){
 	
 	$ionicPlatform.ready(function(){ 
-		findContacts();		
+		doFindContacts();	
 	});
 
 	$scope.findContacts = function(){
-		findContacts();
+		 doFindContacts();	
 	};
 
-	function findContacts(){
-		var options = new ContactFindOptions();
-		options.filter = 'Ruben';
-		options.multiple = true;
-		options.desiredFields = [navigator.contacts.fieldType.name, navigator.contacts.fieldType.phoneNumbers];
-
-		$cordovaContacts.find(options).then(function (results){
-			console.log(JSON.stringify(results));
+	function doFindContacts(){
+		ContactsService.findContacts().then(function (results){
 			$scope.contacts = results;
 			$scope.$broadcast('scroll.refreshComplete');
 		}, function(err){
-			$cordovaToast.showShortCenter('Error contactos');
+			$cordovaToast.showShortCenter('Error en los contactos');
 		});
 	}
 

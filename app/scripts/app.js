@@ -30,7 +30,7 @@ angular.module('starter', ['ionic', 'ngCordova','Camera', 'Contacts', 'Rate'])
         }
       }
     })
-    
+
     .state('tab.contacts', {
     		url: '/contacts',
     		views: {
